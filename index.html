@@ -11,6 +11,9 @@
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link
     href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
@@ -24,22 +27,30 @@
       font-family: "EB Garamond", serif;
       font-optical-sizing: auto;
     }
-    .card{
+
+    .card {
       display: flex;
       flex-direction: column;
     }
-    .card h3{
+
+    .card:hover {
+      background: linear-gradient(rgba(243, 243, 243, 1), rgba(243, 243, 243, 0));
+    }
+
+    .card h3 {
       font-size: 2rem;
       font-weight: 800;
       margin: 16px 0px;
       font-family: "EB Garamond", serif;
       color: #414040;
     }
-    .card p{
+
+    .card p {
       color: #707070;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
-    button{
+
+    button {
       cursor: pointer;
     }
   </style>
@@ -60,15 +71,19 @@
         <button class="px-7 py-4 bg-[#B68C5A] text-white text-lg font-semibold rounded-md">Free Consultation</button>
       </div>
     </nav>
-    <section class="max-w-[1170px] mx-auto mb-[100px]">
-      <div class="relative bg-[url(/images/banner.png)] min-h-[550px] bg-cover bg-center rounded-lg flex flex-col justify-center px-8">
+    <section class="max-w-[1170px] mx-auto mb-[60px] md:mb-[120px]">
+      <div
+        class="relative bg-[url(/images/banner.png)] min-h-[550px] bg-cover bg-center rounded-lg flex flex-col justify-center px-8">
         <div class="absolute inset-0 bg-gradient-to-t from-[#111111] to-transparent"></div>
 
         <div class="relative text-center z-10 max-w-[674px] mx-auto">
-          <h1 class="text-white text-4xl eb-font text-6xl md:text-7xl font-extrabold mb-6">We Provide Effective Legal Solutions</h1>
-          <p class="text-white mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-          <div class="flex gap-6">
-            <input class="flex-1 rounded-lg text-gray-500 pl-6" type="text" placeholder="Search your services">
+          <h1 class="text-white text-4xl eb-font text-6xl md:text-7xl font-extrabold mb-6">We Provide Effective Legal
+            Solutions</h1>
+          <p class="text-white mb-8">There are many variations of passages of Lorem Ipsum available, but the majority
+            have suffered alteration in some form, by injected humour.</p>
+          <div class="flex flex-col md:flex-row gap-6">
+            <input class="flex-1 rounded-lg text-gray-500 pl-6 min-h-[60px]" type="text"
+              placeholder="Search your services">
             <button class="rounded-lg bg-[#B68C5A] font-semibold text-xl px-10 py-4 text-white">Search</button>
           </div>
         </div>
@@ -77,47 +92,84 @@
 
   </header>
   <main>
-    <section class="max-w-[1170px] mx-auto">
-      <div class="text-center">
+    <section class="max-w-[1170px] mx-auto mb-[60px] md:mb-[120px]">
+      <div class="text-center mb-16">
         <h2 class="text-[40px] font-extrabold eb-font text-[#414040] mb-4">The Legal Practice Area</h2>
-        <p class="max-w-[714px] mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <p class="lg:max-w-[714px] px-6 lg:px-0 mx-auto">There are many variations of passages of Lorem Ipsum available, but the
+          majority have suffered alteration in some form, by injected humour.</p>
       </div>
       <div class="grid md:grid-cols-3">
-        <div class="card p-6 text-center">
+        <div class="card p-16 text-center">
           <img class="h-[72px] object-contain" src="./images/business.png" alt="">
           <h3>Business Law</h3>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour.</p>
           <button class="w-fit self-center"><img src="./images/Frame.png" alt=""></button>
         </div>
-        <div class="card p-6">
-          <img src="" alt="">
+        <div class="card p-16 text-center border-l border-gray-200">
+          <img class="h-[72px] object-contain" src="./images/criminal.png" alt="">
           <h3>Criminal Law</h3>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-          <button><img src="./images/Frame.png" alt=""></button>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour.</p>
+          <button class="w-fit self-center"><img src="./images/Frame.png" alt=""></button>
         </div>
-        <div class="card p-6">
-          <img src="" alt="">
+        <div class="card p-16 text-center border-l border-gray-200">
+          <img class="h-[72px] object-contain" src="./images/child.png" alt="">
           <h3>Child Support</h3>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-          <button><img src="./images/Frame.png" alt=""></button>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour.</p>
+          <button class="w-fit self-center"><img src="./images/Frame.png" alt=""></button>
         </div>
-        <div class="card p-6">
-          <img src="" alt="">
+        <div class="card p-16 text-center border-t-0 md:border-t border-gray-200">
+          <img class="h-[72px] object-contain" src="./images/education.png" alt="">
           <h3>Education Law</h3>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-          <button><img src="./images/Frame.png" alt=""></button>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour.</p>
+          <button class="w-fit self-center"><img src="./images/Frame.png" alt=""></button>
         </div>
-        <div class="card p-6">
-          <img src="" alt="">
+        <div class="card p-16 text-center border-t-0 md:border-t border-l border-gray-200">
+          <img class="h-[72px] object-contain" src="./images/divorce.png" alt="">
           <h3>Divorce Law</h3>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-          <button><img src="./images/Frame.png" alt=""></button>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour.</p>
+          <button class="w-fit self-center"><img src="./images/Frame.png" alt=""></button>
         </div>
-        <div class="card p-6">
-          <img src="" alt="">
+        <div class="card p-16 text-center border-l border-t-0 md:border-t border-gray-200">
+          <img class="h-[72px] object-contain" src="./images/tax.png" alt="">
           <h3>Tax Law</h3>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-          <button><img src="./images/Frame.png" alt=""></button>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour.</p>
+          <button class="w-fit self-center"><img src="./images/Frame.png" alt=""></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section -->
+    <section class="max-w-[1170px] mx-auto mb-[60px] md:mb-[120px] px-4 md:px-0">
+
+      <div class="text-center mb-16">
+        <h2 class="text-[40px] font-extrabold eb-font text-[#414040] mb-4">What Our Client Say</h2>
+        <p class="max-w-[714px] mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+      </div>
+
+      <div class="bg-cover bg-center rounded-lg" style="background-image: url(./images/banner.png);">
+
+        <div class="bg-black/75 py-24 text-white text-center px-4 rounded-xl flex items-center">
+          <div>
+            <butto class="px-4"n><i class="fa-solid fa-angle-left text-white"></i></button>
+          </div>
+          <div class="flex flex-col items-center flex-1">
+            <img class="w-16 rounded-full mb-6 border-2 border-gray-200" src="./images/buyer.png" alt="">
+            <h3 class="font-extrabold eb-font text-2xl">Foysal Hossain</h3>
+            <p class="mb-6 text-gray-300">Graphic Designer</p>
+            <p class="max-w-[900px] mx-auto text-gray-300">Contrary to popular belief, Lorem Ipsum is not simply random
+              text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+              Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more
+              obscure Latin words, consectetur.</p>
+          </div>
+          <div>
+            <button class="px-4"><i class="fa-solid fa-angle-right text-white"></i></button>
+          </div>
         </div>
       </div>
     </section>
